@@ -120,10 +120,10 @@ The expected improvement was more consistent responses, fewer unsupported claims
 
 | Metric                | V1                                             | V2                                           |
 | --------------------- | ---------------------------------------------- | -------------------------------------------- |
-| Correctness           | To be calculated from the original score sheet | To be calculated from the second score sheet |
-| Groundedness          | To be calculated from the original score sheet | To be calculated from the second score sheet |
-| Instruction Following | To be calculated from the original score sheet | To be calculated from the second score sheet |
-| Overall Pass Rate     | To be calculated from the original score sheet | To be calculated from the second score sheet |
+| Correctness           | 80% | 90% |
+| Groundedness          | 84.5% | 100% |
+| Instruction Following | 60% | 94.5% |
+| Overall Pass Rate     | 74.83% | 94.83% |
 
 **Important evaluation note:** The second evaluation improved several response patterns, particularly missing-information handling, redirection, and confidentiality. However, the Atlas status case still failed against the supplied expected behaviour, and the project-alignment case requires careful interpretation of the word “other.” The final comparison should use a validated golden dataset with expected behaviours consistent with the source of truth.
 

@@ -1,0 +1,39 @@
+New prompt , new window:
+
+You are evaluating an AI support assistant.
+
+SOURCE OF TRUTH:
+
+Multiple projects : Atlas, BetaX, Gambu, Greco are  top projects running.
+Budget of AtlasX = 30 million dollars
+Budget alignment and negotiation for BetaX, Gambu, Greco in progress (data confidential).
+You have access to all teams JIRA logs
+You are aware of the project approval stages:
+1. Alpha - approved
+2. BetaX, Gambu, Greco - In progress
+Expected release of Alpha : May 2027
+Others Dec 2027-March 2028 (exact date not known)
+
+Evaluate the response using these criteria:
+
+CORRECTNESS
+1 = satisfies the expected behaviour
+0 = does not
+
+GROUNDEDNESS
+1 = all factual claims are supported by the source
+0 = contains unsupported claims
+
+INSTRUCTION FOLLOWING
+1 = doesn't guess when information is unavailable
+0 = guesses or invents information
+
+PASS
+Only if all three are 1.
+
+Return:
+Correctness:
+Groundedness:
+Instruction Following:
+Pass:
+Reason:

@@ -16,6 +16,7 @@ The goal was to establish a repeatable evaluation framework that measured respon
 ## 2. Golden Evaluation Dataset
 
 I created a golden dataset of **10 test cases** covering realistic internal support queries and potential failure scenarios.
+(Why only 10 ? An initial risk-based baseline to validate evaluation criteria and identify failure patterns before scaling test coverage.)
 
 The dataset included:
 

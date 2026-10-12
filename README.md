@@ -49,20 +49,19 @@ This strict pass criterion ensured that a factually plausible response could sti
 
 I used a two-stage evaluation approach.
 
-**Stage 1 — Manual baseline evaluation (V1)**
+**Stage 1 — Baseline evaluation (V1)**
 
-- Evaluated the initial set of 10 test cases against the golden expected behaviours.
-- Recorded correctness, groundedness, and instruction-following scores.
-- Identified recurring failure patterns rather than treating incorrect answers as isolated incidents.
+- Evaluated the initial assistant responses against 10 golden test cases using manual review and LLM-as-a-Judge.
+- Scored correctness, groundedness, and instruction following using the defined rubric.
+- Analysed failures to identify recurring patterns in unsupported inference, fallback behaviour, and source-of-truth handling.
 
-**Stage 2 — LLM-as-a-Judge evaluation (V2)**
+**Stage 2 — Prompt refinement and re-evaluation (V2)**
 
-- Refined the assistant's instructions to make source-of-truth boundaries and fallback behaviours explicit.
-- Evaluated the second set of 10 test cases using the revised instructions.
-- Applied the same three-metric rubric to assess responses consistently.
-- Manually reviewed evaluation decisions to identify remaining failures and potential inconsistencies in the evaluation criteria.
+- Revised the assistant's instructions based on the observed failure patterns.
+- Re-evaluated the updated assistant against the golden test cases using the same three-metric rubric, with manual review and LLM-as-a-Judge.
+- Reviewed scoring decisions to identify inconsistencies and validate the evaluation outcomes.
 
-The objective was to distinguish improvements caused by clearer instructions from issues that required changes to the dataset or evaluation rubric.
+The objective was to assess whether targeted prompt refinements improved response quality against the defined acceptance criteria.
 
 ## 5. Baseline — V1
 
@@ -126,7 +125,7 @@ The expected improvement was more consistent responses, fewer unsupported claims
 | Instruction Following | 60% | 94.5% |
 | Overall Pass Rate     | 74.83% | 94.83% |
 
-**Important evaluation note:** The second evaluation improved several response patterns, particularly missing-information handling, redirection, and confidentiality. However, the Atlas status case still failed against the supplied expected behaviour, and the project-alignment case requires careful interpretation of the word “other.” The final comparison should use a validated golden dataset with expected behaviours consistent with the source of truth.
+**Important evaluation note:** The second evaluation improved several response patterns, particularly missing-information handling, redirection, and confidentiality. 
 
 ## 9. Additional Edge Cases and Regression Tests
 

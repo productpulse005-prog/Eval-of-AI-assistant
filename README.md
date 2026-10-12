@@ -3,11 +3,11 @@ Evaluating an AI Support Assistant: From Prompt Testing to a Repeatable Eval Sys
 
 Here’s a reframed version positioned as an enterprise AI support assistant evaluation case study for Amexa IT, with emphasis on source-grounded responses, confidential information handling, hallucination prevention, and measurable improvement between V1 and V2.
 
-# Evaluating an Enterprise AI Support Assistant at Amexa IT
+# Evaluating an Enterprise AI Support Assistant at Amexa IT 
 
 ## 1. Problem Statement
 
-I built and evaluated an AI support assistant for **Amexa IT**, designed to answer internal questions about project status, budget alignment, approval stages, release timelines, and resource-related information.
+I built and evaluated an AI support assistant for **Amexa IT** (hypothetical enterprise org), designed to answer internal questions about project status, budget alignment, approval stages, release timelines, and resource-related information.
 
 The primary challenge was ensuring the assistant responded using only its approved source of truth, without inventing project details, exposing confidential information, or making unsupported assumptions when information was unavailable.
 
